@@ -1,40 +1,48 @@
-<<<<<<< HEAD
-# lp-idn-form
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project Landing Page Multi-Lead & Tracking (ID-Networkers)
 
-## Getting Started
+Project ini adalah sistem landing page yang dirancang untuk kebutuhan iklan MTCNA dengan fitur segmentasi leads, dashboard admin, dan tracking konversi yang mendalam.
 
-First, run the development server:
+## 🚀 Fitur Utama
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 1. Multi-Lead Segmentation
+Sistem ini menggunakan link khusus untuk membedakan sumber trafik. Setiap link akan mengarahkan user ke halaman yang sama namun dengan pesan WhatsApp yang berbeda saat konfirmasi:
+- `/chat-ig` : Segmentasi trafik dari Instagram Ads.
+- `/chat-tiktok` : Segmentasi trafik dari TikTok Ads.
+- `/chat-fida` & `/chat-budi` : Segmentasi untuk agen/personal.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Admin Dashboard (`/minidn`)
+Halaman admin khusus untuk manajemen operasional tanpa perlu menyentuh code:
+- **Update Nomor WhatsApp**: Mengubah nomor tujuan "Thanks Page" secara global.
+- **Manajemen Status Leads**: Menambahkan fitur "Tagging" (New, Warm, Hot, Ghosting) langsung di tabel leads.
+- **Konfigurasi Tracking**: Setup Pixel ID (FB, TikTok) dan Google Ads ID secara real-time.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Conversion Tracking & Analytics
+- **Global Noindex**: Situs sudah dikonfigurasi `noindex, nofollow` agar tidak terindeks Google (privasi iklan).
+- **Meta Pixel & CAPI**: Integrasi tracking event untuk optimasi iklan Facebook.
+- **TikTok & Google Ads**: Tracking konversi pendaftaran otomatis.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. High Conversion UI/UX
+- **Urgency Countdown**: Timer 10 menit di pop-up pendaftaran untuk mendorong user segera mengisi data.
+- **Auto-Redirect Thanks Page**: User akan otomatis diarahkan ke WhatsApp setelah 3 detik di halaman terima kasih.
+- **Modern Design**: Menggunakan Tailwind CSS & Framer Motion untuk animasi yang premium.
 
-## Learn More
+## 🛠 Tech Stack
+- **Frontend**: Next.js 15 (App Router), TypeScript, Tailwind CSS.
+- **Database & Auth**: Supabase.
+- **Animations**: Framer Motion / Motion for React.
+- **Icons**: Lucide React.
 
-To learn more about Next.js, take a look at the following resources:
+## 📖 Cara Penggunaan
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Mengubah Nomor WhatsApp Admin
+1. Buka halaman `/minidn`.
+2. Masukkan nomor WhatsApp baru di kolom "Nomor Admin".
+3. Klik "Simpan Semua Pengaturan".
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Melihat Leads & Tagging
+1. Buka halaman `/minidn`.
+2. Scroll ke bagian "List Data Leads".
+3. Gunakan dropdown "Status" untuk memberi tanda pada leads (misal: "Hot" untuk yang sudah bayar).
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
->>>>>>> 38498e9 (feat: implement multi-lead pages, conversion tracking, and UI enhancements)
+---
+*Dikembangkan oleh Antigravity untuk ID-Networkers.*
