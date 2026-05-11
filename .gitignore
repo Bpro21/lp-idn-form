@@ -1,0 +1,14 @@
+# next.js
+.next/
+out/
+
+# production
+build/
+dist/
+
+# misc
+node_modules/
+.DS_Store
+*.log
+.env*
+!.env.example
